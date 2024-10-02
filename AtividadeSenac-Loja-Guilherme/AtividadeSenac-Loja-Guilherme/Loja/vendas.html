@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas - Loja Gourmétréz</title>
+    <link rel="stylesheet" href="style.css"> <!-- Usando o style.css global -->
+    <style>
+        /* Estilos adicionais para melhorar o layout da página */
+        header {
+            background-color: #4a90e2;
+             
+            padding: 20px;
+            text-align: center;
+            
+        }
+        h1{
+            color: #f7f7f7;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+
+        h2 {
+            color: #4a90e2;
+            margin-top: 20px;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+        }
+
+        form div {
+            margin-bottom: 15px;
+        }
+
+        input, button {
+           
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        li {
+            margin: 10px;
+            text-align: center;
+        }
+
+        .comida-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10px;
+            object-fit: cover;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .comida-item p {
+            font-weight: bold;
+            color: #4a90e2;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Loja Gourmétréz</h1>
+    </header>
+   
+    <nav>
+        <a href="index.html">Página Inicial</a>
+        <a href="ctrl-estoque.html">Controle de Estoque</a>
+        <a href="add-produto.html">Adicionar Produto</a>
+        <a href="funcionarios.html">Funcionários</a>
+        <a href="vendas.html">Vendas</a>
+        <a href="historico.html">Vendas</a>
+    </nav>
+ 
+    <h2>Formulário de Vendas</h2>
+ 
+    <form action="#">
+        <div>
+            <label for="produto">Produto: </label>
+            <input type="text" id="produto" name="produto" placeholder="Nome do produto">
+        </div>
+ 
+        <div>
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco" name="preco" placeholder="Preço do produto">
+        </div>
+ 
+        <div>
+            <label for="pagamento">Forma de Pagamento:</label>
+            <input type="text" name="pagamento" id="pagamento" placeholder="Dinheiro ou Cartão">
+        </div>
+ 
+        <div>
+            <button type="submit">Concluir Venda</button>
+        </div>
+    </form>
+ 
+    <ul>
+        <li>
+            <div class="comida-item">
+                <p>Sopa de Pedra</p>
+                <img src="ImagemComidas/sopa-de-pedra.jpg" alt="Sopa de Pedra">
+            </div>
+        </li>
+        <li>
+            <div class="comida-item">
+                <p>Cuzcuz</p>
+                <img src="ImagemComidas/cuzcuz.jpg" alt="Cuzcuz ">
+            </div>
+        </li>
+        <li>
+            <div class="comida-item">
+                <p>Remy a milanesa</p>
+                <img src="ImagemComidas/baixados.jpg" alt="Remy a milanesa">
+            </div>
+        </li>
+        <li>
+            <div class="comida-item">
+                <p>Miojo gourmet</p>
+                <img src="ImagemComidas/miojo.jpg" alt="Miojo gourmet">
+            </div>
+        </li>
+        <li>
+            <div class="comida-item">
+                <p>Refri de Grama</p>
+                <img src="ImagemComidas/grama.jpg" alt="Refri de Grama">
+            </div>
+        </li>
+    </ul>
+</body>
+</html>
